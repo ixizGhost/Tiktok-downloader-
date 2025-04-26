@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downloader Multi-Fungsi</title>
+  <style>
+    body {
+      background-image: url('https://files.catbox.moe/99cv35.jpg');
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      color: black;
+    }
+
+
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    main {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap; /* Agar card disusun dalam beberapa baris */
+      justify-content: space-around; /* Menyusun card secara rapi */
+    }
+
+    .card {
+      width: 300px; /* Lebar kartu */
+      height: 400px; /* Tinggi kartu */
+      margin: 20px; /* Margin di sekitar kartu */
+      border-radius: 16px; /* Membuat sudutnya melengkung */
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* biar teks kebaca */
+      z-index: 0;
+      border-radius: 16px;
+    }
+
+    .card .card-content {
+      position: relative;
+      z-index: 1;
+      padding: 16px; /* Padding di dalam kartu */
+      text-align: center;
+      color: white;
+    }
+
+    .card h2 {
+      font-size: 1.8em;
+      margin: 10px 0;
+    }
+
+    .card p {
+      color: lightblue;
+      font-size: 1.1em;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: linear-gradient(135deg, #1e90ff, #00bfff);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0, 191, 255, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #00bfff, #1e90ff);
+      box-shadow: 0 6px 20px rgba(0, 191, 255, 0.6);
+      transform: scale(1.05);
+    }
+
+    /* Card TikTok */
+    .card-tiktok {
+      background-image: url('https://files.catbox.moe/pab0b6.png'); /* Ganti dengan gambar TikTok */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card-tiktok h2 {
+      color: deepskyblue;
+    }
+
+    /* Card Instagram */
+    .card-instagram {
+      background-image: url('https://files.catbox.moe/2p9f4z.png'); /* Ganti dengan gambar Instagram */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card-instagram h2 {
+      color: #e1306c; /* Warna khas Instagram */
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 100%; /* Membuat card lebih responsif pada layar kecil */
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to all downloader by always ixiz</h1>
+  <p>Pilih yang mau di download</p>
+</header>
+
+<main>
+  <!-- Card TikTok -->
+  <div class="card card-tiktok">
+    <div class="card-content">
+      <h2>TikTok</h2>
+      <p>Unduh video TikTok tanpa watermark secara gratis dan cepat.</p>
+      <a href="tiktok.html" class="btn">Mulai</a>
+    </div>
+  </div>
+
+  <!-- Card Instagram -->
+  <div class="card card-instagram">
+    <div class="card-content">
+      <h2>Instagram</h2>
+      <p>Unduh gambar dan video Instagram tanpa watermark dengan cepat.</p>
+      <a href="instagram.html" class="btn">Mulai</a>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
